@@ -1,7 +1,7 @@
 package com.github.pister.common.http.multipart;
 
 import com.github.pister.common.lang.charsets.DefaultCharsets;
-import com.github.pister.tson.utils.StringUtil;
+import com.github.pister.common.lang.util.StringUtil;
 
 import java.io.IOException;
 import java.io.OutputStream;

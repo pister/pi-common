@@ -1,4 +1,4 @@
-package com.github.pister.common.lang;
+package com.github.pister.common.lang.codec;
 
 import com.github.pister.common.security.DigestUtil;
 import com.github.pister.common.lang.util.BytesTextUtil;

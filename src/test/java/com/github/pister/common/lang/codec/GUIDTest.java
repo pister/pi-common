@@ -1,4 +1,4 @@
-package com.github.pister.common.lang;
+package com.github.pister.common.lang.codec;
 
 import com.github.pister.common.lang.guid.GUID;
 import com.github.pister.common.lang.util.CollectionUtil;

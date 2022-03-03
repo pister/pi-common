@@ -90,9 +90,7 @@ public class JavaHttpClient extends AbstractHttpClient implements HttpClient {
             sslContext.init(null, new TrustManager[]{new TrustAnyTrustManager()}, secureRandom);
             httpsURLConnection.setSSLSocketFactory(sslContext.getSocketFactory());
             httpsURLConnection.setHostnameVerifier(new TrustAnyHostnameVerifier());
-        } catch (NoSuchAlgorithmException e) {
-            throw new RuntimeException(e);
-        } catch (KeyManagementException e) {
+        } catch (NoSuchAlgorithmException | KeyManagementException e) {
             throw new RuntimeException(e);
         }
     }

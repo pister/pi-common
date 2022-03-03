@@ -2,10 +2,10 @@ package com.github.pister.common.http;
 
 import com.github.pister.common.http.multipart.MultiPartConstants;
 import com.github.pister.common.http.multipart.Part;
+import com.github.pister.common.io.FastByteArrayInputStream;
 import com.github.pister.common.lang.util.MapUtil;
 import com.github.pister.common.lang.util.StringUtil;
 import com.github.pister.common.lang.util.Transformer;
-import com.github.pister.tson.io.FastByteArrayInputStream;
 
 import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.SSLSession;

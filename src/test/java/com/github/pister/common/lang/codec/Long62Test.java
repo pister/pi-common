@@ -1,6 +1,5 @@
-package com.github.pister.common.lang;
+package com.github.pister.common.lang.codec;
 
-import com.github.pister.common.lang.codec.Long62;
 import junit.framework.Assert;
 import junit.framework.TestCase;
 
