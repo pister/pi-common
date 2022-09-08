@@ -1,6 +1,5 @@
 package com.github.pister.common.lang.codec;
 
-import com.github.pister.common.lang.codec.Base629;
 import junit.framework.Assert;
 import junit.framework.TestCase;
 

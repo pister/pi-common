@@ -22,7 +22,7 @@ public class DataSourcePoolMatrix {
     private String urlProperty = "url";
     private String initMethod;
     private String destroyMethod;
-    private String urlPattern = "jdbc:mysql://%s?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull&amp;transformedBitIsBoolean=true";
+    private String urlPattern = "jdbc:mysql://%s?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true";
     private Map<String, String> properties = MapUtil.newHashMap();
     private Map<Integer, DataSourceGroup> shardDataSourceGroup;
     /**

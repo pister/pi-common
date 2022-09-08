@@ -8,8 +8,8 @@ import com.github.pister.common.ddl.shard.ShardInfo;
 import com.ibatis.sqlmap.client.SqlMapExecutor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.orm.ibatis.SqlMapClientCallback;
 import wint.dal.ibatis.SqlExecutor;
+import wint.dal.ibatis.spring.SqlMapClientCallback;
 import wint.lang.utils.CollectionUtil;
 import wint.lang.utils.MapUtil;
 

@@ -5,8 +5,8 @@ import com.github.pister.common.ddl.datasource.DataSourcePoolMatrix;
 import com.ibatis.sqlmap.client.SqlMapClient;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.core.io.ClassPathResource;
-import org.springframework.orm.ibatis.SqlMapClientFactoryBean;
 import wint.dal.ibatis.ReadWriteSqlMapClientSource;
+import wint.dal.ibatis.ext.ExtSqlMapClientFactoryBean;
 
 /**
  * User: huangsongli
@@ -27,7 +27,7 @@ public class FixedRouteSqlMapClientSource implements InitializingBean {
         readWriteSqlMapClientSource.setMasterDataSource(dataSourceGroup.getMaster());
         readWriteSqlMapClientSource.setSlaveDataSources(dataSourceGroup.getSlavers());
 
-        SqlMapClientFactoryBean sqlMapClientFactoryBean = new SqlMapClientFactoryBean();
+        ExtSqlMapClientFactoryBean sqlMapClientFactoryBean = new ExtSqlMapClientFactoryBean();
         sqlMapClientFactoryBean.setDataSource(dataSourceGroup.getMaster());
         sqlMapClientFactoryBean.setConfigLocation(new ClassPathResource(configLocation));
         sqlMapClientFactoryBean.afterPropertiesSet();

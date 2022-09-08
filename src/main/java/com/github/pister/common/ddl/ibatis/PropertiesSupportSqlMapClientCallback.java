@@ -3,7 +3,7 @@ package com.github.pister.common.ddl.ibatis;
 import com.github.pister.common.ddl.route.Router;
 import com.github.pister.common.ddl.shard.ShardInfo;
 import com.ibatis.sqlmap.client.SqlMapExecutor;
-import org.springframework.orm.ibatis.SqlMapClientCallback;
+import wint.dal.ibatis.spring.SqlMapClientCallback;
 
 import java.sql.SQLException;
 

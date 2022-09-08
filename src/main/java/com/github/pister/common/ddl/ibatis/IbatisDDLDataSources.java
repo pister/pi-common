@@ -15,10 +15,11 @@ import com.github.pister.common.lang.util.MapUtil;
 import com.ibatis.sqlmap.client.SqlMapClient;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.core.io.ClassPathResource;
-import org.springframework.orm.ibatis.SqlMapClientFactoryBean;
 import wint.dal.ibatis.DefaultSqlExecutor;
 import wint.dal.ibatis.ReadWriteSqlMapClientSource;
 import wint.dal.ibatis.SqlExecutor;
+import wint.dal.ibatis.ext.ExtSqlMapClientFactoryBean;
+import wint.dal.ibatis.spring.SqlMapClientFactoryBean;
 
 import javax.sql.DataSource;
 import java.util.Map;
@@ -59,7 +60,7 @@ public class IbatisDDLDataSources implements InitializingBean {
             readWriteSqlMapClientSource.setMasterDataSource(dataSourceGroup.getMaster());
             readWriteSqlMapClientSource.setSlaveDataSources(dataSourceGroup.getSlavers());
 
-            SqlMapClientFactoryBean sqlMapClientFactoryBean = new SqlMapClientFactoryBean();
+            ExtSqlMapClientFactoryBean sqlMapClientFactoryBean = new ExtSqlMapClientFactoryBean();
             sqlMapClientFactoryBean.setDataSource(dataSourceGroup.getMaster());
             sqlMapClientFactoryBean.setConfigLocation(new ClassPathResource(configLocation));
             sqlMapClientFactoryBean.afterPropertiesSet();
